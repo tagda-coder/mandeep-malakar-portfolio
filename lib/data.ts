@@ -1,98 +1,66 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'aadityadav121@gmail.com',
+    email: 'mandeepmalakar710@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Aadit, I am reaching out to you because...',
+    emailBody: 'Hi Mandeep, I am reaching out to you because...',
 
     oldPortfolio:
-        'https://portfolio-amber-chi-76.vercel.app/?vercelToolbarCode=ATS8wZvC78Ukppn',
+        'https://github.com/tagda-coder/',
 
     resumeUrl: '/resume.pdf',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Aadit-7' },
+    { name: 'github', url: 'https://github.com/tagda-coder/' },
     {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/aadit-yadav-331b5317b/',
+        url: 'https://www.linkedin.com/in/mandeep-malakar-286939250/',
     },
     { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
 ];
 
 export const MY_STACK = {
     frontend: [
-        {
-            name: 'JavaScript',
-            icon: '/logo/js.png',
-        },
-        // {
-        //     name: 'TypeScript',
-        //     icon: '/logo/ts.png',
-        // },
-        {
-            name: 'React',
-            icon: '/logo/react.png',
-        },
-        // {
-        //     name: 'Next.js',
-        //     icon: '/logo/next.png',
-        // },
-        {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
-            name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
-        },
-        {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'Sass',
-            icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
-        },
+        { name: 'React', icon: '/logo/react.png' },
+        { name: 'Next.js', icon: '/logo/next.png' },
+        { name: 'TypeScript', icon: '/logo/ts.png' },
+        { name: 'JavaScript', icon: '/logo/js.png' },
+        { name: 'Tailwind CSS', icon: '/logo/tailwind.png' },
+        { name: 'shadcn/ui', icon: '/logo/shadcnui.svg' },
+        { name: 'GSAP', icon: '/logo/gsap.png' },
+        { name: 'Three.js', icon: '/logo/threedotjs.svg' },
+        { name: 'React Three Fiber', icon: '/logo/threedotjs.svg' },
     ],
     backend: [
-        {
-            name: 'Node.js',
-            icon: '/logo/node.png',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
+        { name: 'Node.js', icon: '/logo/node.png' },
+        { name: 'Express.js', icon: '/logo/express.png' },
+        { name: 'MongoDB', icon: '/logo/mongodb.svg' },
+        { name: 'Mongoose', icon: '/logo/mongoose.svg' },
+        { name: 'JWT', icon: '/logo/jsonwebtokens.svg' },
+        { name: 'Redis', icon: '/logo/redis.svg' },
+        { name: 'Socket.io', icon: '/logo/socketdotio.svg' },
     ],
-    database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
-        },
-        // {
-        //     name: 'PostgreSQL',
-        //     icon: '/logo/postgreSQL.png',
-        // },
-        {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
-        },
+    mobile: [
+        { name: 'React Native', icon: '/logo/react.png' },
+        { name: 'Capacitor', icon: '/logo/capacitor.svg' },
+        { name: 'Android', icon: '/logo/android.svg' },
     ],
-    tools: [
-        {
-            name: 'Git',
-            icon: '/logo/git.png',
-        },
+    'linux & security': [
+        { name: 'Bash', icon: '/logo/gnubash.svg' },
+        { name: 'Python', icon: '/logo/python.svg' },
+        { name: 'Linux', icon: '/logo/linux.svg' },
+    ],
+    'cloud & devops': [
+        { name: 'AWS', icon: '/logo/aws.png' },
+        { name: 'Vercel', icon: '/logo/vercel.svg' },
+        { name: 'Render', icon: '/logo/render.svg' },
+        { name: 'Docker', icon: '/logo/docker.svg' },
+        { name: 'Git', icon: '/logo/git.png' },
+        { name: 'Postman', icon: '/logo/postman.svg' },
+        { name: 'ImageKit', icon: '/logo/imagekit.svg' },
+        { name: 'Cloudinary', icon: '/logo/cloudinary.svg' },
     ],
 };
 

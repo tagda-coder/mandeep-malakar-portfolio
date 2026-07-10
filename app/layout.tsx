@@ -28,8 +28,8 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Aadit Yadav',
-    description: 'Personal portfolio of Aadit Yadav',
+    title: 'Portfolio - Mandeep Malakar',
+    description: 'Personal portfolio of Mandeep Malakar',
 };
 
 export default function RootLayout({

@@ -2,6 +2,7 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useRef } from 'react';
+import { cn } from '@/lib/utils';
 
 gsap.registerPlugin(useGSAP);
 
@@ -37,7 +38,10 @@ const ParticleBackground = () => {
                     ref={(el) => {
                         particlesRef.current.push(el!);
                     }}
-                    className="absolute rounded-full bg-white"
+                    className={cn(
+                        'absolute rounded-full',
+                        i % 3 === 0 ? 'bg-primary' : 'bg-white',
+                    )}
                 />
             ))}
         </div>

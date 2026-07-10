@@ -14,6 +14,7 @@ export default {
                 background: {
                     DEFAULT: 'hsl(var(--background))',
                     light: 'hsl(var(--background-light))',
+                    active: 'hsl(var(--background-light))',
                 },
                 foreground: 'hsl(var(--foreground))',
                 card: {
@@ -26,10 +27,12 @@ export default {
                 },
                 primary: {
                     DEFAULT: 'hsl(var(--primary))',
+                    hover: 'hsl(var(--primary-hover))',
                     foreground: 'hsl(var(--primary-foreground))',
                 },
                 secondary: {
                     DEFAULT: 'hsl(var(--secondary))',
+                    hover: 'hsl(var(--secondary-hover))',
                     foreground: 'hsl(var(--secondary-foreground))',
                 },
                 muted: {

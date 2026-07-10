@@ -42,27 +42,29 @@ const Preloader = () => {
 
     return (
         <div className="fixed inset-0 z-[6] flex" ref={preloaderRef}>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
-            <div className="preloader-item h-full w-[10%] bg-black"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
+            <div className="preloader-item h-full w-[10%] bg-background"></div>
 
             <p className="name-text flex text-[20vw] lg:text-[200px] font-anton text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden">
                 <span className="inline-block translate-y-full">I</span>
                 <span className="inline-block translate-y-full">&apos;</span>
                 <span className="inline-block translate-y-full">M</span>
                 <span className="inline-block translate-y-full">&nbsp;</span>
+                <span className="inline-block translate-y-full">M</span>
                 <span className="inline-block translate-y-full">A</span>
-                <span className="inline-block translate-y-full">A</span>
+                <span className="inline-block translate-y-full">N</span>
                 <span className="inline-block translate-y-full">D</span>
-                <span className="inline-block translate-y-full">I</span>
-                <span className="inline-block translate-y-full">T</span>
+                <span className="inline-block translate-y-full">E</span>
+                <span className="inline-block translate-y-full">E</span>
+                <span className="inline-block translate-y-full">P</span>
             </p>
         </div>
     );
