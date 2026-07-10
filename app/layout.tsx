@@ -12,6 +12,16 @@ import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
 import Preloader from '../components/Preloader';
 import StickyEmail from './_components/StickyEmail';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
+
+const THEME_INIT_SCRIPT = `
+(function() {
+    try {
+        var theme = localStorage.getItem('portfolio-theme');
+        if (theme) document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+})();
+`;
 
 const antonFont = Anton({
     weight: '400',
@@ -38,8 +48,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <head>
+                <script
+                    dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }}
+                />
+
                 {/* ✅ Primary SVG Favicon */}
                 <link rel="icon" href="/favicon2.svg" type="image/svg+xml" />
 
@@ -82,6 +96,7 @@ export default function RootLayout({
                     <ScrollProgressIndicator />
                     <ParticleBackground />
                     <StickyEmail />
+                    <ThemeSwitcher />
                 </ReactLenis>
             </body>
         </html>

@@ -21,6 +21,11 @@ const ArrowAnimation = () => {
             strokeDashoffset: arrow2Ref.current?.getTotalLength(),
         });
 
+        // resolve the CSS var at animation time so the flash follows the active theme
+        const primaryHsl = getComputedStyle(document.documentElement)
+            .getPropertyValue('--primary')
+            .trim();
+
         const tl = gsap.timeline({ repeat: -1 });
 
         tl.to('#banner-arrow-svg', { autoAlpha: 1, duration: 0.1 });
@@ -32,7 +37,7 @@ const ArrowAnimation = () => {
         tl.to('#banner-arrow-svg', {
             duration: 0.5,
             delay: 0.5,
-            fill: 'hsl(258.3 89.5% 66.3% / 0.06)',
+            fill: `hsl(${primaryHsl} / 0.06)`,
         });
         tl.to('#banner-arrow-svg', {
             duration: 1,
@@ -58,13 +63,13 @@ const ArrowAnimation = () => {
             <path
                 className="svg-arrow svg-arrow-1"
                 d="M1 1V39.9286L188 110V70.6822L1 1Z"
-                stroke="hsl(252 17.2% 17.1%)"
+                style={{ stroke: 'hsl(var(--border))' }}
                 ref={arrow1Ref}
             />
             <path
                 className="svg-arrow svg-arrow-2"
                 d="M375 1V39.9286L188 110V70.6822L375 1Z"
-                stroke="hsl(252 17.2% 17.1%)"
+                style={{ stroke: 'hsl(var(--border))' }}
                 ref={arrow2Ref}
             />
         </svg>
