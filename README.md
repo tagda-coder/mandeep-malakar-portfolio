@@ -10,7 +10,7 @@ If you like my work, give it a star⭐.
 
 ## Credit
 
-This readme is inspired by [me.toinfinite.dev](https://www.tajmirul.site/)
+Mandeep Malakar
 
 ## 📄 License
 
