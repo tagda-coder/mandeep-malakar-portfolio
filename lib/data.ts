@@ -66,51 +66,58 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Animated Website',
-        slug: 'mti-electronics',
-        liveUrl: 'https://k-72-clone.onrender.com/',
-        year: 2025,
+        title: 'MoodCut Studio',
+        slug: 'moodcut-studio',
+        liveUrl: 'https://moodcut-studio.vercel.app',
+        year: 2026,
         description: `
-      Developed a responsive animated website clone inspired by K72.ca, using React.js, GSAP, and Tailwind CSS to replicate modern UI transitions and agency-style visuals. <br/> <br/>
+      Built a full-stack portfolio and client-acquisition website for a video editor & motion designer, showcasing cinematic edits, testimonials, and project stats to convert visitors into clients. <br/> <br/>
 
       Key Features:<br/>
 <ul>
-  <li>🎨 Modern Design: Pixel-perfect layout inspired by K72.ca with bold typography and minimal aesthetics</li>
-  <li>🌀 Smooth Animations: Subtle motion effects and transitions created using GSAP for engaging visuals</li>
-  <li>🖼️ Interactive Image Sections: Dynamic project and team visuals with hover and fade effects</li>
-  <li>📱 Fully Responsive: Optimized layouts for desktop, tablet, and mobile viewing</li>
-  <li>⚡ Fast Performance: Lightweight React structure with optimized assets for quick loading</li>
+  <li>🎬 Cinematic Hero: Bold typography-driven landing section with animated stats (views, projects, client retention)</li>
+  <li>📽️ Featured Showreel: Embedded video player highlighting the editor's best work</li>
+  <li>🗂️ Filterable Portfolio: Category-based project gallery (Motion Graphics, Clean Edits, Talking Head, Documentary)</li>
+  <li>⭐ Testimonials Wall: Client reviews with ratings pulled dynamically from the database</li>
+  <li>📩 Contact & Booking: Discovery-call booking and a message form wired to email delivery</li>
 </ul><br/>
 
 
       Technical Highlights:
 <ul>
-  <li>Utilized GSAP for smooth, timeline-based animations and element transitions</li>
-  <li>Developed modular and reusable UI components using React and Tailwind CSS</li>
-  <li>Optimized image assets and layout structure for better performance</li>
-  <li>Maintained clean, scalable code architecture for easy future updates</li>
+  <li>Built a MERN stack backend to manage projects, testimonials, and media uploads</li>
+  <li>Integrated Cloudinary for optimized video/image storage and delivery</li>
+  <li>Used Formspree for reliable contact-form submissions without a custom mail server</li>
+  <li>Designed a fully responsive, dark cinematic UI with React</li>
 </ul>
 
       `,
         role: `
-      Frontend Developer <br/>
-Owned the entire frontend development process:
+      Full-Stack Developer <br/>
+Built the project end-to-end for a real client (video editor):
 <ul>
-  <li>🎨 Designed and built all UI components using React.js and Tailwind CSS</li>
-  <li>🌀 Implemented engaging animations and transitions with GSAP</li>
-  <li>📱 Ensured fully responsive layouts across desktop, tablet, and mobile</li>
-  <li>⚡ Optimized performance by minimizing re-renders and asset size</li>
-  <li>🚀 Deployed the project seamlessly on Render for live demonstration</li>
+  <li>🎨 Designed and developed the entire UI in React with a custom cinematic theme</li>
+  <li>🛠️ Built the MERN backend (Node.js, Express, MongoDB) to manage portfolio content and testimonials</li>
+  <li>☁️ Integrated Cloudinary for media asset management</li>
+  <li>📩 Set up Formspree for contact form handling</li>
+  <li>🚀 Deployed the site live on Vercel for the client</li>
 </ul>
 
       `,
-        techStack: ['React.js', 'Tailwind CSS', 'GSAP', 'Render'],
-        thumbnail: '/projects/thumbnail/k72.png',
-        longThumbnail: '/projects/long/k72.png',
+        techStack: [
+            'React',
+            'Node.js',
+            'Express',
+            'MongoDB',
+            'Cloudinary',
+            'Formspree',
+        ],
+        thumbnail: '/projects/thumbnail/moodcut-studio.png',
+        longThumbnail: '/projects/long/moodcut-studio.png',
         images: [
-            '/projects/images/k72-1.png',
-            '/projects/images/k72-2.png',
-            '/projects/images/k72-3.png',
+            '/projects/images/moodcut-studio-1.png',
+            '/projects/images/moodcut-studio-2.png',
+            '/projects/images/moodcut-studio-3.png',
         ],
     },
     {
